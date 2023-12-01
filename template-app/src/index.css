@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Mandali&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 600;
+
+font-family: 'Mandali', sans-serif;
+}
+body {
+  background-size: cover;
+  background-position: center;
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+}
