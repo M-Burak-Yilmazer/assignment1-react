@@ -1,5 +1,5 @@
 import { data } from "../../helper/data.js";
-import cardStyle from "./LessonCard.module.css"
+import cardStyle from "./LessonCard.module.css";
 
 const LessonCard = () => {
   return (
@@ -12,9 +12,9 @@ const LessonCard = () => {
       }}
       className="row"
     >
-      {data.map((item) => (
-        <div className=" col-12 col-md-6 col-lg-4 g-4">
-          <div className="d-flex flex-sm-column flex-lg-row justify-content-md-start justify-content-center align-items-center gap-2">
+      {data.map((item, index) => (
+        <div key={index} className=" col-12 col-md-6 col-lg-4 g-4">
+          <div className="d-flex flex-column flex-md-row justify-content-md-start justify-content-center align-items-center gap-2">
             <img
               style={{
                 height: "70px",
@@ -27,10 +27,12 @@ const LessonCard = () => {
             />
             <div className="d-flex flex-column  align-items-start  ">
               <span>
-                Lesson Name : <span className={cardStyle.name}>{item.name}</span>
+                Lesson Name :{" "}
+                <span className={cardStyle.name}>{item.name}</span>
               </span>
               <span>
-                Lesson Hour : <span className={cardStyle.hour}>{item.hour}</span>
+                Lesson Hour :{" "}
+                <span className={cardStyle.hour}>{item.hour}</span>
               </span>
             </div>
           </div>
